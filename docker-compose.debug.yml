@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  django-vue-hello-world:
+    image: django-vue-hello-world
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
